@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>The book club</h1>
+    </header>
+
+    <form>
+        <label for="username">UserName: </label>
+        <input type="text" name="username" required id="username" />
+
+        <label for="title">Title: </label>
+        <input type="text" name="title" required id="title" />
+
+        <label for="author">Author: </label>
+        <input type="text" name="author" required id="author" />
+
+        <label for="description">Description: </label>
+        <textarea name="description" name="description" id="description" cols="30" rows="3"></textarea>
+
+        <select name="genre">
+            <option value="">Genre</option>
+            <option value="fiction">Fiction</option>
+            <option value="nonfiction">Non-Fiction</option>
+            <option value="scifi">Sci-Fi</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="distopian">Distopian</option>
+            <option value="humor">Humor</option>
+            <option value="cooking">Cooking</option>
+            <option value="history">History</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <section>
+        <ul id="bookList"></ul>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
